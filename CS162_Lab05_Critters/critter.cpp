@@ -29,13 +29,17 @@ Critter::~Critter()
 
 void Critter::move(Critter* arrayIn[][20], int x, int y)
 {
-	//	x is a random number from 1 to 4 (1 = up, 2 = right, 3 = down, 4 = left)
 	//cout << "critter move has been called.";
 }
 
 //void breed(Critter&);
 
-string Critter::getSymbol()
+string Critter::getSymbol()	//to be overridden by derived class
 {
 	return "C";
 };
+
+int Critter::getTurnCount()
+{
+	return turnCount;
+}

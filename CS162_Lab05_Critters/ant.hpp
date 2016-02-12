@@ -19,9 +19,16 @@ protected:
 public:
 	Ant();				//default constructor
 	~Ant();				//deconstructor
+
+	/*********************************************************************
+	** Function: move
+	** Description: moves an ant randomly, then breeds if ready.
+	** Pre-Conditions: none
+	** Post-Conditions: a new ant is created if current ant breeds
+	*********************************************************************/
 	void move(Critter* arrayIn[][20], int x, int y);
-	//	void breed();
-	std::string getSymbol();
+
+	std::string getSymbol();	//returns 0
 };
 
 #endif
